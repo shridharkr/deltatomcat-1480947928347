@@ -1,0 +1,11 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: deltatomcat
+  host: deltatomcat
+  disk_quota: 1024M
+  services:
+  - Compose for RabbitMQ-kg
+  buildpack: java_buildpack
